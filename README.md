@@ -1,2 +1,2 @@
 # os-auth
-Authenticate the user using native authentication request boxes
+ > Authenticate a user using native authentication request boxes
