@@ -42,7 +42,7 @@ Since `osAuth` returns a promise, the following will also work:
 const osAuth = require('os-auth');
 
 (async () => {
-    var authenticated = osAuth("Test", "Please enter your username and password");
+    var authenticated = await osAuth("Test", "Please enter your username and password");
 
     if (authenticated) {
         // The user is authenticated! Do whatever now.
