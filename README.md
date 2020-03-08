@@ -2,8 +2,10 @@
  > Authenticate a user using native authentication request boxes
 
 # Screenshots
+### Windows
 ![the os-auth screen running on windows](https://github.com/ssight/os-auth/blob/master/screenshots/windows.png)
 
+### Linux
 ![the os-auth screen running on linux](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
 
 # Usage
