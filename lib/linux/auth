@@ -1,0 +1,14 @@
+# ! /bin/bash
+credentials=$(zenity --password --username --title="$title")
+username=${credentials%|*}
+password=${credentials##*|}
+
+if [ "$USER" != "$username" ] 
+then
+    echo "False"
+    exit 0
+fi
+
+sudo -k
+echo $password | sudo -S echo -e "\nTrue" && exit 0
+echo "False"
