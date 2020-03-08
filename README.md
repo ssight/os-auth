@@ -2,9 +2,9 @@
  > Authenticate a user using native authentication request boxes
 
 # Screenshots
-![the os-auth screen running on windows]('https://github.com/ssight/os-auth/blob/master/screenshots/windows.png')
+![the os-auth screen running on windows](https://github.com/ssight/os-auth/blob/master/screenshots/windows.png)
 
-![the os-auth screen running on linux]('https://github.com/ssight/os-auth/blob/master/screenshots/linux.png')
+![the os-auth screen running on linux](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
 
 # Usage
 ## Synopsis
