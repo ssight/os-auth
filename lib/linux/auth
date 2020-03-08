@@ -1,5 +1,5 @@
 # ! /bin/bash
-credentials=$(zenity --password --username --title="$title")
+credentials=$(zenity --password --username --title="$1")
 username=${credentials%|*}
 password=${credentials##*|}
 
