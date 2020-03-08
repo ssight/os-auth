@@ -8,6 +8,8 @@
 ### Linux
 ![the os-auth screen running on linux](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
 
+Note that this currently doesn't work on MacOS.
+
 # Installation
 ### Through NPM:
 `npm i https://github.com/ssight/os-auth.git`
