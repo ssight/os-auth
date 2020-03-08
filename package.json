@@ -1,0 +1,25 @@
+{
+  "name": "os-auth",
+  "version": "1.0.0",
+  "description": "Authenticate a user using native authentication request boxes",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssight/os-auth.git"
+  },
+  "keywords": [
+    "authentication"
+  ],
+  "author": "ssight",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ssight/os-auth/issues"
+  },
+  "homepage": "https://github.com/ssight/os-auth#readme"
+}
