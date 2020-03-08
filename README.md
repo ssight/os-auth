@@ -8,6 +8,12 @@
 ### Linux
 ![the os-auth screen running on linux](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
 
+# Installation
+### Through NPM:
+`npm i https://github.com/ssight/os-auth.git`
+### Through Git:
+`git clone https://github.com/ssight/os-auth.git`
+
 # Usage
 ## Synopsis
 ```js
@@ -29,7 +35,7 @@ osAuth().then(console.log)
 This will ask the user for authentication, printing out `true` or `false`, depending on weather they inputted their credentials correctly or not.
 
 ### Async function usage:
-Since, `osAuth` returns a promise, the following will also work:
+Since `osAuth` returns a promise, the following will also work:
 ```js
 const osAuth = require('os-auth');
 
