@@ -68,3 +68,9 @@ osAuth("Test", "Please enter your username and password").then(authenticated => 
 }).catch(error => {
     // There was an error.
 })
+```
+
+# Known Issues
+* The `message` property currently has not effect on the prompt in Linux.
+
+* The username is always assumed correct on MacOS, with no box for it.
