@@ -33,17 +33,18 @@ module.exports = (title, message) => {
 
             var prompt = spawn("osascript", ["./lib/darwin/prompt.scpt", title, message]);
             prompt.stdout.on('data', password => {
-                if (password.includes("(-128)")) resolve(false);
-                else {
-                    password = password.toString().split(":").pop();
+                password = password.toString().split(":").pop();
 
-                    var auther = spawn("bash", ["./lib/darwin/auth", password]);
-                    auther.stdout.on('data', auth => {
-                        auth = auth.toString().trim();
-                        if (auth === 'True') resolve(true);
-                        else if (auth === 'False') resolve(false);
-                    })
-                }
+                var auther = spawn("bash", ["./lib/darwin/auth", password]);
+                auther.stdout.on('data', auth => {
+                    auth = auth.toString().trim();
+                    if (auth === 'True') resolve(true);
+                    else if (auth === 'False') resolve(false);
+                })
+            })
+            prompt.stderr.on('data', err => {
+                err = err.toString();
+                if (err.includes("(-128)")) resolve(false);
             })
         }
 
