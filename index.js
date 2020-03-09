@@ -27,6 +27,18 @@ module.exports = (title, message) => {
             })
         }
 
+        else if (process.platform === 'darwin') {
+            title = title || "Authentication Request";
+            message = message || "A program is requesting your authentication. Please enter your username and password.";
+
+            var auther = spawn("bash", ["./lib/darwin/auth", title]);
+            auther.stdout.on('data', auth => {
+                auth = auth.toString().trim();
+                if (auth === 'True') resolve(true);
+                else if (auth === 'False') resolve(false);
+            })
+        }
+
         else reject("User operating system does not work with os-auth")
     })
 }

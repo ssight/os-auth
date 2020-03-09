@@ -1,0 +1,7 @@
+# ! /bin/bash
+input=$(osascript -e 'display dialog "'$1'" with title "'$2'" default answer "" buttons {"Cancel", "OK"} default button 2 with hidden answer')
+password=${input##*"text returned:"}
+
+sudo -k
+echo $password | sudo -S printf "\nTrue\n" && exit 0
+echo "False"
