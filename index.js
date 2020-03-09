@@ -29,7 +29,7 @@ module.exports = (title, message) => {
 
         else if (process.platform === 'darwin') {
             title = title || "Authentication Request";
-            message = message || "A program is requesting your authentication. Please enter your username and password.";
+            message = message || "A program is requesting your authentication. Please enter your password.";
 
             var prompt = spawn("osascript", ["./lib/darwin/prompt.scpt", title, message]);
             prompt.stdout.on('data', password => {
