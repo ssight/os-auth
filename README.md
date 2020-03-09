@@ -9,7 +9,7 @@
 ![the os-auth screen running on Linux](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
 
 ### MacOS
-![the os-auth screen running on MacOS](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
+![the os-auth screen running on MacOS](https://github.com/ssight/os-auth/blob/master/screenshots/macos.png)
 
 # Installation
 ### Through NPM:
@@ -68,4 +68,3 @@ osAuth("Test", "Please enter your username and password").then(authenticated => 
 }).catch(error => {
     // There was an error.
 })
-```
