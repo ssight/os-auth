@@ -31,11 +31,19 @@ module.exports = (title, message) => {
             title = title || "Authentication Request";
             message = message || "A program is requesting your authentication. Please enter your username and password.";
 
-            var auther = spawn("bash", ["./lib/darwin/auth", title]);
-            auther.stdout.on('data', auth => {
-                auth = auth.toString().trim();
-                if (auth === 'True') resolve(true);
-                else if (auth === 'False') resolve(false);
+            var prompt = spawn("osascript", ["./lib/darwin/prompt.scpt", title, message]);
+            prompt.stdout.on('data', password => {
+                if (password.includes("(-128)")) resolve(false);
+                else {
+                    password = password.toString().split(":").pop();
+
+                    var auther = spawn("bash", ["./lib/darwin/auth", password]);
+                    auther.stdout.on('data', auth => {
+                        auth = auth.toString().trim();
+                        if (auth === 'True') resolve(true);
+                        else if (auth === 'False') resolve(false);
+                    })
+                }
             })
         }
 
