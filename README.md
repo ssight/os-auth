@@ -13,7 +13,7 @@
 
 # Installation
 ### Through NPM:
-`npm i https://github.com/ssight/os-auth.git`
+`npm i os-auth` or `npm install os-auth  --save`
 ### Through Git:
 `git clone https://github.com/ssight/os-auth.git`
 
