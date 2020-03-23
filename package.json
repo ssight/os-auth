@@ -1,6 +1,6 @@
 {
   "name": "os-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authenticate a user using native authentication request boxes",
   "main": "index.js",
   "directories": {
