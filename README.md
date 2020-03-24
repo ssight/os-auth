@@ -17,7 +17,7 @@
 
 or
 
-`npm install os-auth --save`
+`npm install os-auth@latest --save`
 ### Through Git:
 `git clone https://github.com/ssight/os-auth.git`
 
