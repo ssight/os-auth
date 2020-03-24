@@ -3,13 +3,13 @@
 
 # Screenshots
 ### Windows
-![the os-auth screen running on Windows](https://github.com/ssight/os-auth/blob/master/screenshots/windows.png)
+![the os-auth screen running on Windows](https://raw.githubusercontent.com/ssight/os-auth/master/screenshots/windows.png)
 
 ### Linux
-![the os-auth screen running on Linux](https://github.com/ssight/os-auth/blob/master/screenshots/linux.png)
+![the os-auth screen running on Linux](https://raw.githubusercontent.com/ssight/os-auth/master/screenshots/linux.png)
 
 ### MacOS
-![the os-auth screen running on MacOS](https://github.com/ssight/os-auth/blob/master/screenshots/macos.png)
+![the os-auth screen running on MacOS](https://raw.githubusercontent.com/ssight/os-auth/master/screenshots/macos.png)
 
 # Installation
 ### Through NPM:
